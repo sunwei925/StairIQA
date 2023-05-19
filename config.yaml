@@ -1,0 +1,60 @@
+BID:
+  database_name: BID
+  database_dir: /data/sunwei_data/BID/ImageDatabase/ImageDatabase/
+  filename_dir: csvfiles/
+  train_filename: BID_train
+  test_filename: BID_test
+  resize: 384
+  crop_size: 320
+  n_epochs: 8
+
+LIVE_challenge:
+  database_name: LIVE_challenge
+  database_dir: /data/sunwei_data/ChallengeDB_release/Images/
+  filename_dir: csvfiles/
+  train_filename: LIVE_challenge_train
+  test_filename: LIVE_challenge_test
+  resize: 384
+  crop_size: 320
+  n_epochs: 8
+
+
+Koniq10k:
+  database_name: Koniq10k
+  database_dir: /data/sunwei_data/koniq10k_1024x768/1024x768/
+  filename_dir: csvfiles/
+  train_filename: Koniq10k_train
+  test_filename: Koniq10k_test
+  resize: 384
+  crop_size: 320
+  n_epochs: 12
+
+SPAQ:
+  database_name: SPAQ
+  database_dir: /data/sunwei_data/SPAQ_resize/
+  filename_dir: csvfiles/
+  train_filename: SPQA_train
+  test_filename: SPQA_test
+  resize: 384
+  crop_size: 320
+  n_epochs: 12
+
+FLIVE:
+  database_name: FLIVE
+  database_dir: /data/sunwei_data/FLIVEDatabase_WP/
+  filename_dir: csvfiles/
+  train_filename: FLIVE_train
+  test_filename: FLIVE_test
+  resize: 340
+  crop_size: 320
+  n_epochs: 3
+
+FLIVE_patch:
+  database_name: FLIVE_patch
+  database_dir: /data/sunwei_data/FLIVEDatabase_WPPatch/
+  filename_dir: csvfiles/
+  train_filename: FLIVE_patch_train
+  test_filename: FLIVE_patch_test
+  resize: 256
+  crop_size: 224
+  n_epochs: 1
