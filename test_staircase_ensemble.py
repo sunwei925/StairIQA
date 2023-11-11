@@ -50,12 +50,13 @@ if __name__ == '__main__':
                         [93.65937742, 0.51803345, 49.84010415, 28.07474279],\
                             [94.71514948, 21.6468321, 39.27372875, 15.37350998],\
                                 [81.43059766, 23.51273452, 47.11992594, 9.2093784 ]]
-    model_path_all = ['/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-Koniq10k.pkl',\
-                      '/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-SPAQ.pkl',\
-                        '/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-LIVE_challenge.pkl',\
-                            '/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-BID.pkl',\
-                                '/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-FLIVE.pkl',\
-                                    '/DATA/sunwei_data/ModelFolder/AuthenticIQA/ResNet_staircase_50-EXP1-FLIVE_patch.pkl']
+    # model file
+    model_path_all = ['ResNet_staircase_50-EXP1-Koniq10k.pkl',\
+                      'ResNet_staircase_50-EXP1-SPAQ.pkl',\
+                        'ResNet_staircase_50-EXP1-LIVE_challenge.pkl',\
+                            'ResNet_staircase_50-EXP1-BID.pkl',\
+                                'ResNet_staircase_50-EXP1-FLIVE.pkl',\
+                                    'ResNet_staircase_50-EXP1-FLIVE_patch.pkl']
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     test_scores_all = np.zeros([6])
